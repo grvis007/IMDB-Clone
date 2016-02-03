@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example of Bootstrap 3 Horizontal Form Layout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .bs-example{
+            margin: 20px;
+        }
+        /* Fix alignment issue of label on extra small devices in Bootstrap 3.2 */
+        .form-horizontal .control-label{
+            padding-top: 7px;
+        }
+        body{
+            background-color: #1b6d85;
+
+        }
+    </style>
+</head>
+<body>
+<div class="bs-example">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="firstName" class="control-label col-xs-2">First Name</label>
+            <div class="col-xs-5">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="lastName" class="control-label col-xs-2">Last Name</label>
+            <div class="col-xs-5">
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="userId" class="control-label col-xs-2">User Name</label>
+            <div class="col-xs-5">
+                <input type="email" class="form-control" id="userId" placeholder="User Name" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="control-label col-xs-2">Password</label>
+            <div class="col-xs-5">
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="cPassword" class="control-label col-xs-2">Confirm Password</label>
+            <div class="col-xs-5">
+                <input type="password" class="form-control" id="cPassword" placeholder="Confirm Password" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
